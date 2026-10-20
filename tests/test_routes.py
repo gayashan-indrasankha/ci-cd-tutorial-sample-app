@@ -33,6 +33,8 @@ class BasicTests(unittest.TestCase):
         self.assertEqual(response.mimetype, 'application/json')
         body = json.loads(response.data)
         self.assertEqual(body['status'], 'ok')
+        self.assertEqual(body['demo'], 'v2')
+
 
     def test_health(self):
         response = self.app.get('/health')
