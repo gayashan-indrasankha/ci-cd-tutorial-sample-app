@@ -60,6 +60,8 @@ $ python seed.py
 
 ## Running tests
 
+The `/health` endpoint returns a JSON status that can be used to check a staging deployment.
+
 Run:
 
 ```sh
